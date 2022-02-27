@@ -1,6 +1,7 @@
 import React from 'react';
 
 import DeleteIcon from '@mui/icons-material/Delete';
+import AutorenewIcon from '@material-ui/icons/Autorenew';
 function MyScreeen(props) {
 
 
@@ -12,7 +13,7 @@ function MyScreeen(props) {
                 <div className="message-data align-right">
                     <span className=""><span>Contract End Date -</span> {selectedDate} </span>  &nbsp;
                     &nbsp;
-                    <span className="message-data-name"><DeleteIcon></DeleteIcon></span>
+                    <span className="message-data-name"><AutorenewIcon ></AutorenewIcon></span>
                     <i className="fa fa-circle me"></i>
                 </div>
                 <div className="message other-message float-right">
