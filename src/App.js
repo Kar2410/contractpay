@@ -42,8 +42,8 @@ const [MyBalance, setMyBalance] = useState(0);
     });
    
     setamount("");
-    setFriendBlance(amount+1);
-    setMyBalance(amount+1);
+    setFriendBlance(Number(FriendBlance)+ Number(amount));
+    setMyBalance(Number(MyBalance)+ Number(amount));
   
 
 
