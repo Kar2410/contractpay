@@ -1,10 +1,8 @@
 import React, { useState } from "react";
 import "./index.css";
-import './Components/Timer'
-
 import FriendScreen from "./Components/FriendScreen";
 import MyScreeen from "./Components/MyScreen";
-import Timer from "./Components/Timer";
+
 
 function App() {
   const [msg, setmsg] = useState("");
