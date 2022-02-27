@@ -42,8 +42,8 @@ const [MyBalance, setMyBalance] = useState(0);
     });
    
     setamount("");
-    setFriendBlance(FriendBlance+amount);
-    setMyBalance(MyBalance+amount);
+    setFriendBlance(amount+1);
+    setMyBalance(amount+1);
   
 
 
@@ -111,6 +111,7 @@ const [MyBalance, setMyBalance] = useState(0);
                 rows="3"
               ></textarea>
               <textarea
+              type="number"
                 style={{ marginLeft: "10px" }}
                 name="message-to-send"
                 placeholder="Enter the amount"
@@ -166,6 +167,7 @@ const [MyBalance, setMyBalance] = useState(0);
               onChange={inputdate}
             />
             <textarea
+
               name="message-to-send"
               placeholder="Type your message"
               rows="3"
@@ -173,6 +175,7 @@ const [MyBalance, setMyBalance] = useState(0);
               onChange={Inputmsg}
             ></textarea>
             <textarea
+            type="number"
               style={{ marginLeft: "10px" }}
               name="message-to-send"
               placeholder="Enter the amount"
