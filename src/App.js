@@ -50,12 +50,14 @@ function App() {
     setinitialDate("");
   }
 
-function DeletePayment(id){
+function DeletePayment(id,rupeeNew){
       setnewMsg((olddata)=>{
         return olddata.filter((arrEle,index)=>{
           return index !==id;
         })
-      })
+      });
+      setFriendBlance(Number(FriendBlance) - Number(rupeeNew));
+      setMyBalance(Number(MyBalance) + Number(rupeeNew));
 }
 
   return (
