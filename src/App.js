@@ -11,7 +11,7 @@ function App() {
   const [initialDate, setinitialDate] = useState("");
   const [dateArray, setdateArray] = useState([]);
   const [FriendBlance, setFriendBlance] = useState(0);
-  const [MyBalance, setMyBalance] = useState(0);
+  const [MyBalance, setMyBalance] = useState(10000);
 
   function Inputmsg(inputdata) {
     setmsg(inputdata.target.value);
@@ -37,7 +37,7 @@ function App() {
 
     setamount("");
     setFriendBlance(Number(FriendBlance) + Number(amount));
-    setMyBalance(Number(MyBalance) + Number(amount));
+    setMyBalance(Number(MyBalance) - Number(amount));
 
     setdateArray((date_oldata) => {
       return [...date_oldata, initialDate];
@@ -53,6 +53,11 @@ function App() {
 function DeletePayment(id,rupeeNew){
       setnewMsg((olddata)=>{
         return olddata.filter((arrEle,index)=>{
+          return index !==id;
+        })
+      });
+      setNewamount((amount_olddata)=>{
+        return amount_olddata.filter((arrEle,index)=>{
           return index !==id;
         })
       });
