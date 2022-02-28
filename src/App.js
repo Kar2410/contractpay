@@ -50,6 +50,14 @@ function App() {
     setinitialDate("");
   }
 
+function DeletePayment(id){
+      setnewMsg((olddata)=>{
+        return olddata.filter((arrEle,index)=>{
+          return index !==id;
+        })
+      })
+}
+
   return (
     <>
       <div className="container clearfix">
@@ -92,7 +100,9 @@ function App() {
                     date={finalDate}
                     paymsg={val}
                     key={index}
+                    id={index}
                     rupeeNew={rupee}
+                    passFun={DeletePayment}
                   ></FriendScreen>
                 );
               })}
@@ -164,7 +174,9 @@ function App() {
                     date={finalDate}
                     paymsg={val}
                     key={index}
+                    id={index}
                     rupeeNew={rupee}
+                    passFun={DeletePayment}
                   ></MyScreeen>
                 );
               })}

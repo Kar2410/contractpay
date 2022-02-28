@@ -12,7 +12,7 @@ function FriendScreen(props) {
                 <div className="message-data align-right">
                     <span className=""><span>Contract End Date -</span> {selectedDate} </span>  &nbsp;
                     &nbsp;
-                    <span className="message-data-name"><AutorenewIcon></AutorenewIcon></span>
+                    <span className="message-data-name" onClick={()=>{props.passFun(props.id)}}><AutorenewIcon></AutorenewIcon></span>
                     <i className="fa fa-circle me"></i>
                 </div>
                 <div className="message other-message float-right">
