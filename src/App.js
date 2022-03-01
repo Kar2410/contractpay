@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./index.css";
 import FriendScreen from "./Components/FriendScreen";
 import MyScreeen from "./Components/MyScreen";
-
+import LockIcon from '@mui/icons-material/Lock';
 function App() {
   const [msg, setmsg] = useState("");
   const [newMsg, setnewMsg] = useState([]);
@@ -137,7 +137,7 @@ function DeletePayment(id,rupeeNew){
             ></textarea>
             <i className="fa fa-file-o"></i> &nbsp;&nbsp;&nbsp;
             <i className="fa fa-file-image-o"></i>
-            <button>Send</button>
+            <button onClick={submit}> <LockIcon></LockIcon> Pay</button>
           </div>
         </div>
 
@@ -215,7 +215,7 @@ function DeletePayment(id,rupeeNew){
             ></textarea>
             <i className="fa fa-file-o"></i> &nbsp;&nbsp;&nbsp;
             <i className="fa fa-file-image-o"></i>
-            <button onClick={submit}>Send</button>
+            <button onClick={submit}> <LockIcon></LockIcon> Pay</button>
           </div>
         </div>
       </div>

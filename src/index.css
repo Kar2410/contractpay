@@ -11,7 +11,7 @@ body {
 }
 
 input[type=date]:focus {
-  background-color: #ffe761;
+  background-color: #6DCECB;
 
 
 }
@@ -22,7 +22,7 @@ input[type=date] {
   padding: 2px 20px;
   margin: 8px 0px;
   box-sizing: border-box;
-  border: 2px solid  #ffdf2b;
+  border: 2px solid  #54C7C3;
   border-radius: 4px;
 
 }
@@ -135,17 +135,30 @@ input[type=date] {
   cursor: pointer;
 }
 .chat .chat-message button {
-  float: right;
-  color: #94C2ED;
-  font-size: 16px;
-  text-transform: uppercase;
+  width: 100%;
+  color: white;
+  outline: 0!important;
+  height: 42px;
+  font-size: 22px;
+  background-color: #54C7C3!important;
   border: none;
-  cursor: pointer;
-  font-weight: bold;
-  background: #F2F5F8;
+  margin-top: -20px;
+
 }
 .chat .chat-message button:hover {
-  color: #75b1e8;
+  background-color: #6DCECB!important;
+}
+
+.chat .chat-message button:active {
+  background-color: #4FBCB9!important;
+}
+
+.chat .chat-message button:disabled {
+  background: rgba(84, 199, 195, .5)!important;
+  color: #FFF!important;
+}
+.chat .chat-message button:hover {
+  color: white;
 }
 
 .online, .offline, .me {
