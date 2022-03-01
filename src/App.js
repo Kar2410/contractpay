@@ -130,7 +130,7 @@ function DeletePayment(id,rupeeNew){
             ></textarea>
             <textarea
               type="number"
-              style={{ marginLeft: "10px" }}
+              style={{ marginLeft: "10px"}}
               name="message-to-send"
               placeholder="Enter the amount"
               rows="3"
