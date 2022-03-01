@@ -215,7 +215,7 @@ function DeletePayment(id,rupeeNew){
             ></textarea>
             <i className="fa fa-file-o"></i> &nbsp;&nbsp;&nbsp;
             <i className="fa fa-file-image-o"></i>
-         
+            <button onClick={submit}>Send</button>
           </div>
         </div>
       </div>
