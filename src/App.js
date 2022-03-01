@@ -120,13 +120,15 @@ function DeletePayment(id,rupeeNew){
             <input
               type="date"
               placeholder="date-month-year"
-              value={initialDate}
+              
               onChange={inputdate}
             />
             <textarea
               name="message-to-send"
               placeholder="Type your message"
               rows="3"
+              
+              onChange={Inputmsg}
             ></textarea>
             <textarea
               type="number"
@@ -134,6 +136,8 @@ function DeletePayment(id,rupeeNew){
               name="message-to-send"
               placeholder="Enter the amount"
               rows="3"
+             
+              onChange={Inputamount}
             ></textarea>
             <i className="fa fa-file-o"></i> &nbsp;&nbsp;&nbsp;
             <i className="fa fa-file-image-o"></i>
