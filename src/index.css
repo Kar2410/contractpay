@@ -75,7 +75,7 @@ input[type=date] {
   padding: 30px 30px 20px;
   border-bottom: 2px solid white;
   overflow-y: scroll;
-  height: 316px;
+  height: 352px;
 }
 .chat .chat-history .message-data {
   margin-bottom: 15px;
