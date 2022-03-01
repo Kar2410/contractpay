@@ -79,6 +79,12 @@ input[type=date] {
 }
 .chat .chat-history .message-data {
   margin-bottom: 15px;
+  background-color: red;
+  color: white;
+  font-weight: bold;
+  font-size: 17px;
+  padding-bottom: 10px;
+ 
 }
 .chat .chat-history .message-data-time {
   color: #a8aab1;
