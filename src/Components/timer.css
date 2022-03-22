@@ -30,7 +30,7 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    color: #254864 !important;
+    /* color: #254864 !important; */
   }
   
   .time {
